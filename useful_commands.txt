@@ -5,3 +5,7 @@ pip freeze > requirements.txt // needed for gcloud
 pip install -r requirements.txt // will install flask
 
 python server.py // runs the app 
+
+API Key nyt 
+
+vi1B8sCbzyAYuJ7cJIBF5YfDDhdu2sfN
