@@ -1,0 +1,7 @@
+source env/bin/activate // to activate the venv 
+
+pip freeze > requirements.txt // needed for gcloud 
+
+pip install -r requirements.txt // will install flask
+
+python server.py // runs the app 
