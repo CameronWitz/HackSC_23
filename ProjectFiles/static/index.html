@@ -16,11 +16,11 @@
   crossorigin="anonymous"></script>
 	<!-- our own js -->
 	<script type="text/javascript" src="static/searchfrontend.js"></script>
-	<script>
+	<!-- <script>
          $(document).ready(function() {
             $('#loadPage').load("static/stats.html");
          });
-   </script>
+   </script> -->
 
 	<title>HackSC_23 NewsRoom</title>
 </head>
@@ -33,7 +33,12 @@
 			<button type="button" id="searchButton" class="btn btn-outline-primary">search</button>
 		</span>
 	</div>
-	<div id="loadPage" style="display:none"> </div> 
+	<div id="loadPage" style="display:none"> 
+		<div class="w80 bg-warning">
+			<label>Generate word map for <span id="country"></span>!</label>
+			<button type="button" onclick="getNYTWordMap($('#countryInput').val())">ClickMe!</button>
+		</div>
+	</div> 
 </body>
 </html>
 

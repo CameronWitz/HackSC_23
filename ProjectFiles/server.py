@@ -14,6 +14,7 @@ def render_home():
 def getNYTWordMap():
     # assume we have a country string
     args = request.args.to_dict()
+    print("\n", args, "\n")
     targ_country = args['country']
 
     url = "https://api.nytimes.com/svc/search/v2/articlesearch.json"
@@ -22,7 +23,7 @@ def getNYTWordMap():
         'api-key' : "vi1B8sCbzyAYuJ7cJIBF5YfDDhdu2sfN",
         'begin_date' : "20210201",
         'end_date' : "20230201",
-        'fq' : "headline:iran",
+        'fq' : "headline:iran", # need to update
         'sort' : 'newest'
     }
 

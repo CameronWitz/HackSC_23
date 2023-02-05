@@ -10,8 +10,8 @@ window.onload = function() {
 };
 
 
-function getNYTWordMap(){
-  let url = "/getNYTWordMap"
+function getNYTWordMap(country){
+  let url = "/getNYTWordMap?country=" + country
 
   fetch(url).then(response => response.json()).then(output => displayInfo(output)).catch(error => displayError(error))
 }
