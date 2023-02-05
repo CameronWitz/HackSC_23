@@ -1,11 +1,13 @@
-$(document).ready(function(e) {
-  $('button').click(function(e){
-    console.log('this is the click');
+window.onload = function() {
+  $('#searchButton').click(function(e){
     e.preventDefault();
-    alert("HI");
-    // ("#loadPage").load(("stats.html");
+    var inputString = jQuery("#countryInput").val();
+    var clickme = document.getElementById("loadPage");
+    clickme.style.display = "block";
+    jQuery('#country').html(inputString);
+
   });
-});
+};
 
 
 function getNYTWordMap(){
